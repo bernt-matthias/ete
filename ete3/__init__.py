@@ -65,14 +65,11 @@ try:
 except ImportError as e:
     pass
 
-try:
-    from .treeview.svg_colors import *
-    from .treeview.main import *
-    from .treeview.faces import *
-    from .treeview import faces
-    from .treeview import layouts
-except ImportError as e:
-    pass
+from .treeview.svg_colors import *
+from .treeview.main import *
+from .treeview.faces import *
+from .treeview import faces
+from .treeview import layouts
 
 try:
     from .version import __version__
